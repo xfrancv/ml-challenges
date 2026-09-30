@@ -1,0 +1,7 @@
+# Starter code for "Know what you don't know: nine locations".
+#
+# The kit itself needs only these. Training a network on the images is up to
+# you -- bring whatever framework you like (PyTorch, JAX, ...).
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7       # only for evaluate.py --plot
