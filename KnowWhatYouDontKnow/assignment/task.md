@@ -43,3 +43,7 @@ Both scripts must run the same prediction code, so the dev score is a faithful e
   - Fit or tune only on `dev.csv` or the dev batches, never on the test set.
   - Use no external data, and hardcode no row or batch ids.
 - Write `solutions/solutionM/DESCRIPTION.md` with a short summary of the algorithm, the dev score, and a comparison against the earlier solutions.
+- Write `solutions/solutionM/log.txt` containing:
+i) time when you finished
+ii) time it took to complete task 
+iii) your signature, e.g. `Claude code + Opus 5.1'
