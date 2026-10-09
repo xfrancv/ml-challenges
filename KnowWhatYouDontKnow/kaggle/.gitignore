@@ -4,3 +4,5 @@ data/
 __pycache__/
 *.pyc
 solutions/
+leaderboard.md
+leaderboard_baseline.md
