@@ -1,0 +1,17 @@
+# The 8 base priors: locations 0..7 of the challenge start from these.
+# Sliding pairs, chal.priors.pair_priors(8, tau=0.35): prior i puts 0.35 on
+# classes i and i+1 (mod 8) and 0.05 on each of the other six.
+# make_data.py moves them as little as possible so that every training image
+# can be placed (chal/locations.py), adds the remainder location and writes
+# the final 9 location priors to <out>/data/priors.txt.
+# The TV column is against the TissueMNIST training class frequency; it is
+# informational and ignored on reading.
+# index  label  TV(theta, theta_tr)  theta_1 ... theta_Y
+0	pair(tau=0.35) on classes [0, 1]	0.349995	0.35 0.35 0.05 0.05 0.05 0.05 0.05 0.05
+1	pair(tau=0.35) on classes [1, 2]	0.620758	0.05 0.35 0.35 0.05 0.05 0.05 0.05 0.05
+2	pair(tau=0.35) on classes [2, 3]	0.577649	0.05 0.05 0.35 0.35 0.05 0.05 0.05 0.05
+3	pair(tau=0.35) on classes [3, 4]	0.556403	0.05 0.05 0.05 0.35 0.35 0.05 0.05 0.05
+4	pair(tau=0.35) on classes [4, 5]	0.599512	0.05 0.05 0.05 0.05 0.35 0.35 0.05 0.05
+5	pair(tau=0.35) on classes [5, 6]	0.433835	0.05 0.05 0.05 0.05 0.05 0.35 0.35 0.05
+6	pair(tau=0.35) on classes [6, 7]	0.335118	0.05 0.05 0.05 0.05 0.05 0.05 0.35 0.35
+7	pair(tau=0.35) on classes [7, 0]	0.251278	0.35 0.05 0.05 0.05 0.05 0.05 0.05 0.35

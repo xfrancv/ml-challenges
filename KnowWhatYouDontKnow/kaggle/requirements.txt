@@ -1,0 +1,11 @@
+# The challenge pipeline. Torch is needed only by train_label_model.py; every
+# other script reads the calibrated log-posterior it writes and is pure
+# NumPy/SciPy/pandas.
+numpy>=1.24
+scipy>=1.10
+scikit-learn>=1.3
+pandas>=2.0
+matplotlib>=3.7
+tqdm>=4.65
+torch>=2.2
+torchvision>=0.17
